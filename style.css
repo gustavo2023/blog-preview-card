@@ -15,7 +15,7 @@ html {
 body {
   background: var(--color-yellow, #f4d04e);
   margin: 0;
-  padding: 1.5rem;
+  padding: 0;
   font-family: "Figtree", sans-serif;
 }
 
@@ -104,14 +104,21 @@ body {
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 .attribution {
-    padding: 2rem;
-    color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.attribution a{
-    color: rgba(0, 0, 0, 0.6);
+.attribution a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  #container {
+    max-width: 20rem; /* Mobile design width */
+  }
 }
