@@ -67,7 +67,7 @@ I also think that from now I want to try experimenting with different kinds of t
 
 ### Useful resources
 
-- [W3Schools Tutorila](https://www.w3schools.com/css/css3_flexbox.asp) - This helped me have a basic understanding of flexbox.
+- [W3Schools Tutorial](https://www.w3schools.com/css/css3_flexbox.asp) - This helped me have a basic understanding of flexbox.
 - [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) - This is an amazing documentation site for CSS helped me see how transitions work.
 
 ## Author
