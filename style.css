@@ -1,4 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
 
 :root {
   --color-yellow: hsl(47, 88%, 63%);
@@ -7,34 +96,23 @@
   --color-gray-950: hsl(0, 0%, 7%);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
 body {
-  background: var(--color-yellow, #f4d04e);
-  margin: 0;
-  padding: 0;
-  font-family: "Figtree", sans-serif;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-yellow);
+  font-family: 'Figtree', sans-serif;
 }
 
 #container {
   max-width: 24rem;
-  margin: 0 auto;
-  margin-top: 10vh;
 }
 
 .card {
   display: flex;
-  padding: 1.5rem;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 1.5rem;
   gap: 1.5rem;
   border-radius: 1.25rem;
   border: 1px solid var(--color-gray-950, #111);
@@ -122,7 +200,7 @@ footer {
 }
 
 /* Media Query for screens smaller than 480px */
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   #container {
     max-width: 20rem; /* Mobile design width */
   }
