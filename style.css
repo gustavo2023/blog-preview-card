@@ -204,7 +204,7 @@ footer {
 
 /* Media Query for screens smaller than 480px */
 @media (max-width: 30rem) {
-  #container {
+  .card {
     max-width: 20rem; /* Mobile design width */
   }
 }
